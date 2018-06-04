@@ -1,0 +1,5 @@
+.git
+Dockerfile-django
+Dockerfile-web
+docker-compose.yml
+.gitignore

@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile-web
+    command: ./entrypoint.sh
+    ports:
+      - "8000:8000"
+    volumes:
+      - web_static:/code/static/
+    depends_on:
+      - django
+    links:
+      - django
+  django:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile-django
+    command: ./entrypoint.sh
+    environment:
+       - DEBUG=False
+    volumes:
+      - web_static:/code/static
+
+volumes:
+  web_static:
