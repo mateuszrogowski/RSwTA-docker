@@ -25,7 +25,7 @@ Startowa aplikacja Django, do której można skopiować konfiguracje Docker'a i 
 
 - `exec {container_id}`  - Run a command in a running container
 
-- `exec it {container_id} bash` - Run bash in a running container
+- `exec -it {container_id} bash` - Run bash in a running container
 
 - `logs {container_id}` - Fetch the logs of a container
 
