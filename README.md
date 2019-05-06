@@ -1,5 +1,10 @@
-# Instalacja Docker
+# Instalacja 
+
+## Docker
 https://docs.docker.com/install/
+
+## docker-compose
+https://docs.docker.com/compose/install/
 
 # Wstęp do technologii Docker
 https://docs.docker.com/engine/docker-overview/
@@ -8,13 +13,17 @@ https://medium.freecodecamp.org/docker-easy-as-build-run-done-e174cc452599
 
 # Szablony
 
-## simple
+## docker-compose
+
+### simple
 Prosta konfiguracja docker-compose + docker. Tworzony jest tylko obraz z Django. Projekt jest uruchamiany poprzez `python manage.py runserver`
 
-## advanced
+### advanced
 Bardziej złożony projekt. Składa się z aplikacji Django uruchomionej za pomocą gunicorn i serwera Web - Nginx.
 
-## django-project
+## Django
+
+### django-project
 Startowa aplikacja Django, do której można skopiować konfiguracje Docker'a i uruchomić w ramach testu.
 
 # Komendy
@@ -41,4 +50,6 @@ Startowa aplikacja Django, do której można skopiować konfiguracje Docker'a i 
 
 # Uruchomienie projektów
 
-`docker-compose -f docker-compose.yml up --build`
+```
+docker-compose -f docker-compose.yml up --build
+```
