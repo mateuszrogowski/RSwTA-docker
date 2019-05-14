@@ -49,7 +49,7 @@ Startowa aplikacja Django, do której można skopiować konfiguracje Docker'a i 
 
 - [`build`](https://docs.docker.com/engine/reference/commandline/build/) - Build an image from a Dockerfile
 
-- [`kill`](https://docs.docker.com/engine/reference/commandline/kill/) - Kill one or more running containers
+- [`kill {container_id}`](https://docs.docker.com/engine/reference/commandline/kill/) - Kill one or more running containers
 
 ## Docker compose
 
