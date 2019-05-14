@@ -7,9 +7,16 @@ https://docs.docker.com/install/
 https://docs.docker.com/compose/install/
 
 # Wstęp do technologii Docker
+
+## Docker
+
 https://docs.docker.com/engine/docker-overview/
 
 https://medium.freecodecamp.org/docker-easy-as-build-run-done-e174cc452599
+
+## docker-compose
+
+https://docs.docker.com/compose/overview/
 
 # Szablony
 
@@ -30,23 +37,27 @@ Startowa aplikacja Django, do której można skopiować konfiguracje Docker'a i 
 
 ## Docker
 
-- `ps` - List containers
+- [`ps`](https://docs.docker.com/engine/reference/commandline/ps/) - List containers
 
-- `exec {container_id}`  - Run a command in a running container
+- [`run`](https://docs.docker.com/engine/reference/commandline/run/) - Run a command in a new container
 
-- `exec -it {container_id} bash` - Run bash in a running container
+- [`exec {container_id}`](https://docs.docker.com/engine/reference/commandline/exec/)  - Run a command in a running container
 
-- `logs {container_id}` - Fetch the logs of a container
+- [`exec -it {container_id} bash`](https://docs.docker.com/engine/reference/commandline/exec/) - Run bash in a running container
 
-- `build` - Build an image from a Dockerfile
+- [`logs {container_id}`](https://docs.docker.com/engine/reference/commandline/logs/) - Fetch the logs of a container
+
+- [`build`](https://docs.docker.com/engine/reference/commandline/build/) - Build an image from a Dockerfile
+
+- [`kill`](https://docs.docker.com/engine/reference/commandline/kill/) - Kill one or more running containers
 
 ## Docker compose
 
-- `build` - Build docker compose stack
+- [`build`](https://docs.docker.com/compose/reference/build/) - Build docker compose stack
 
-- `up` - Start docker compose stack
+- [`up`](https://docs.docker.com/compose/reference/up/) - Start docker compose stack
 
-- `stop` - Stop docker compose stack
+- [`stop`](https://docs.docker.com/compose/reference/stop/) - Stop docker compose stack
 
 # Uruchomienie projektów
 
